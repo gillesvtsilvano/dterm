@@ -23,11 +23,7 @@ function _showHello() {
     text.set_position(Math.floor(monitor.width / 2 - text.width / 2),
                       Math.floor(monitor.height / 2 - text.height / 2));
 
-    Tweener.addTween(text,
-                     { opacity: 0,
-                       time: 2,
-                       transition: 'easeOutQuad',
-                       onComplete: _hideHello });
+    Tweener.addTween(text, {opacity: 0, time: 2, transition: 'easeOutQuad', onComplete: _hideHello });
 }
 
 function init() {
